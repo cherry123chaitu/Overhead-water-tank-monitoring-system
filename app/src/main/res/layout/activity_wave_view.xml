@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".WaveView">
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/WaveLoadingview"
+        android:layout_width="314dp"
+        android:layout_height="309dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:foregroundGravity="center_vertical"
+        app:wlv_borderColor="@color/LightBlue"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="40"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+        app:wlv_titleBottomColor="@color/white"
+        app:wlv_titleCenter="Center Title"
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="24sp"
+        app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleTopColor="@color/white"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="@color/LightBlue"
+        tools:ignore="MissingConstraints"
+        tools:layout_conversion_absoluteHeight="411dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="Reload"
+        android:text="Reload"></Button>
+</LinearLayout>
